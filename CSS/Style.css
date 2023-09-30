@@ -220,6 +220,17 @@ header .container .menu .main-menu .btn-login {
     display: block;
   }
 }
+.showcase .showcase-wave-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+}
+.showcase .showcase-wave-image img {
+  width: 100%;
+  height: 100%;
+}
 
 .company-info .container {
   display: flex;
@@ -278,9 +289,6 @@ header .container .menu .main-menu .btn-login {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
-.features .container .features-rightside .custom-card {
-  border: solid black;
-}
 .features .container .features-rightside .custom-card .card-body {
   display: flex;
   flex-direction: column;
@@ -296,4 +304,357 @@ header .container .menu .main-menu .btn-login {
 .features .container .features-rightside .custom-card .card-body i {
   margin-bottom: 20px;
   font-size: 4em;
+}
+
+.about-company .container {
+  width: 1320px;
+  height: 615px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-company .container .left-side {
+  flex: 1;
+  position: relative;
+}
+.about-company .container .left-side img {
+  width: 533px;
+  height: 615px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-company .container .left-side .blue-box {
+  position: absolute;
+  width: 340px;
+  height: 150px;
+  background-color: lightblue;
+  top: 450px;
+  left: -25px;
+}
+.about-company .container .left-side .blue-box h2 {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+.about-company .container .left-side .blue-box h2 .title {
+  color: #FF4500;
+  font-size: 16px;
+}
+.about-company .container .left-side .blue-box p {
+  padding: 10px 20px;
+  margin: 0;
+}
+.about-company .container .right-side {
+  flex: 1;
+  padding: 20px 0;
+}
+.about-company .container .right-side h6 {
+  color: #FF4500;
+  margin-bottom: 20px;
+}
+.about-company .container .right-side h1 {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.about-company .container .right-side .subtext p {
+  margin-bottom: 250px;
+}
+.about-company .container .right-side button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.about-company .container .right-side button:hover {
+  background-color: white;
+  color: black;
+}
+.about-company .container .right-side button i.fa-solid.fa-arrow-up-right {
+  margin-left: 10px;
+}
+.about-company .container .right-side .introvideo {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+.about-company .container .right-side .introvideo i {
+  margin-right: 30px;
+}
+.about-company .container .right-side .introvideo i.fa-regular.fa-circle-play {
+  margin-left: 20px;
+  font-size: 35px;
+  transition: color 0.3s;
+  vertical-align: middle;
+}
+.about-company .container .right-side .introvideo i.fa-regular.fa-circle-play:hover {
+  color: #FF4500;
+}
+
+.beige-box {
+  width: 100%;
+  background-color: #F0EFE9;
+  position: relative;
+  padding: 100px 0;
+  margin-top: 50px;
+}
+.beige-box .container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.beige-box .container .our-services, .beige-box .container h1 {
+  text-align: center;
+}
+.beige-box .container .our-services {
+  color: #FF4500;
+  margin-bottom: 20px;
+}
+.beige-box .container h1 {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.beige-box .container .content-box .tile {
+  width: 308px;
+  height: 333px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 20px;
+}
+.beige-box .container .content-box .tile.white-tile:hover {
+  background-color: #F0D082;
+  color: black;
+}
+.beige-box .container .content-box .tile h6 {
+  margin-top: 50px;
+}
+.beige-box .container .content-box .tile p {
+  margin-bottom: 50px;
+}
+.beige-box .container .content-box .tile .decorative-stripe {
+  width: 50px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.beige-box .container .content-box .tile .circle-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.beige-box .container .content-box .black-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+.beige-box .container .content-box .black-btn:hover {
+  background-color: white;
+  color: black;
+}
+.beige-box .container .content-box .white-btn {
+  background-color: white;
+  color: black;
+}
+.beige-box .container .content-box .white-btn:hover {
+  background-color: #000;
+  color: white;
+}
+.beige-box .image-our-services {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.beige-box .image-our-services img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.custom-section {
+  padding: 50px 0;
+}
+.custom-section .container {
+  display: flex;
+  justify-content: space-between;
+  width: 1500px;
+  height: 630px;
+  gap: 20px;
+}
+.custom-section .container .left-column {
+  width: 28%;
+  padding-right: 15px;
+}
+.custom-section .container .left-column h6 {
+  margin-bottom: 30px;
+  color: #FF4500;
+}
+.custom-section .container .left-column .main-title {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.custom-section .container .left-column .cards {
+  display: flex;
+  flex-direction: column;
+}
+.custom-section .container .left-column .cards h4 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.custom-section .container .left-column .cards h4 i {
+  margin-right: 10px;
+}
+.custom-section .container .left-column .cards .under-text {
+  margin-left: 35px;
+}
+.custom-section .container .left-column .cards .card {
+  width: 330px;
+  height: 157.5px;
+  display: flex;
+  align-items: start;
+  border: none;
+}
+.custom-section .container .left-column .cards .card .icon-container i {
+  font-size: 24px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  padding: 10px;
+}
+.custom-section .container .left-column .cards .card .text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.custom-section .container .left-column .cards .card .text-container h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.custom-section .container .right-column {
+  width: 30%;
+  padding-left: 15px;
+  position: relative;
+}
+.custom-section .container .right-column .beige-box {
+  width: 1057px;
+  height: 425px;
+  background-color: #F0EFE9;
+  position: absolute;
+  top: 280px;
+  left: 50%;
+  transform: translateX(-65%);
+}
+.custom-section .container .right-column .overlapping-image {
+  width: 700px;
+  height: 520px;
+  position: absolute;
+  top: 50px;
+  left: 33%;
+  transform: translateX(-65%);
+}
+
+.project-section .container {
+  width: 1320px;
+  height: 1400px;
+  background-color: white;
+}
+.project-section .container h6 {
+  color: #FF4500;
+  z-index: 10;
+  text-align: center;
+  margin-top: 200px;
+}
+.project-section .container h1 {
+  color: black;
+  font-weight: bold;
+  z-index: 10;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.project-section .container .cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.project-section .container .cards-container .card {
+  position: relative;
+  width: 645px;
+  height: 445px;
+  border: 1px solid lightgray;
+}
+.project-section .container .cards-container .card img {
+  width: 645px;
+  height: 300px;
+}
+.project-section .container .cards-container .card p {
+  color: black;
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+.project-section .container .cards-container .card hr {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  width: 90%;
+}
+.project-section .container .cards-container .card .read-more {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.project-section .container .cards-container .card .read-more i {
+  margin-left: 10px;
+}
+.project-section .container .cards-container .card .read-more:hover {
+  color: #FF4500;
+}
+.project-section .container .projects-btn {
+  display: block;
+  width: 238px;
+  height: 56px;
+  background-color: black;
+  color: white;
+  border-radius: 28px;
+  text-align: center;
+  line-height: 56px;
+  margin: 100px auto 0;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+.project-section .container .projects-btn i {
+  margin-left: 10px;
+}
+.project-section .container .projects-btn:hover {
+  background-color: white;
+  color: black;
 }
