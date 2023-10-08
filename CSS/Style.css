@@ -45,7 +45,7 @@ html, body {
 }
 .btn-yellow:hover {
   background-color: #191919;
-  border: 1px solid 191919;
+  border: 1px solid #191919;
   color: white;
 }
 
@@ -66,8 +66,52 @@ html, body {
 }
 .btn-long-yellow:hover {
   background-color: #191919;
-  border: 1px solid 191919;
+  border: 1px solid #191919;
   color: white;
+}
+
+.btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn-black i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-black:hover {
+  background-color: white;
+  border: 1px solid #191919;
+  color: #191919;
+}
+
+.btn-circle-black {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50px;
+  left: 80%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+.btn-circle-black:hover {
+  background-color: white;
+  color: black;
 }
 
 header {
@@ -388,22 +432,6 @@ header .container .menu .main-menu .btn-login {
 .about-company .container .right-side .subtext p {
   margin-bottom: 250px;
 }
-.about-company .container .right-side button {
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  transition: background-color 0.3s, color 0.3s;
-}
-.about-company .container .right-side button:hover {
-  background-color: white;
-  color: black;
-}
-.about-company .container .right-side button i.fa-solid.fa-arrow-up-right {
-  margin-left: 10px;
-}
 .about-company .container .right-side .introvideo {
   display: inline-block;
   position: relative;
@@ -459,7 +487,7 @@ header .container .menu .main-menu .btn-login {
   width: 308px;
   height: 333px;
   background-color: white;
-  text-align: center;
+  text-align: left;
   padding: 20px;
   box-sizing: border-box;
   position: relative;
@@ -484,28 +512,6 @@ header .container .menu .main-menu .btn-login {
   position: absolute;
   top: 40px;
   left: 20px;
-}
-.our-services .container .content-box .tile .btn-circle-black {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 50px;
-  left: 80%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  background-color: black;
-  color: white;
-  border: none;
-  transition: background-color 0.3s, color 0.3s;
-  text-decoration: none;
-}
-.our-services .container .content-box .tile .btn-circle-black:hover {
-  background-color: white;
-  color: black;
 }
 .our-services .image-our-services {
   position: absolute;
@@ -911,6 +917,7 @@ header .container .menu .main-menu .btn-login {
   margin-bottom: 20px;
 }
 .carousel-article .card-article {
+  position: relative;
   flex: 0 0 auto;
   width: 420px;
   height: 428px;
@@ -919,9 +926,30 @@ header .container .menu .main-menu .btn-login {
   flex-direction: column;
   align-items: flex-start;
 }
+.carousel-article .card-article .date-stamp, .carousel-article .card-article .date-month {
+  position: absolute;
+  left: 20px;
+  background-color: #F0D082;
+  color: black;
+  padding: 5px;
+  width: 56px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-article .card-article .date-stamp {
+  top: 20px;
+  font-weight: bold;
+}
+.carousel-article .card-article .date-month {
+  top: 45px;
+}
 .carousel-article .card-article img {
   width: 420px;
   height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .carousel-article .card-article h6 {
   font-weight: bold;
