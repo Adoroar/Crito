@@ -254,6 +254,11 @@ header .container .menu .main-menu .btn-login {
   width: 100%;
   height: 100%;
 }
+@media (min-width: 1200px) {
+  .showcase .showcase-wave-image img {
+    display: block;
+  }
+}
 
 .company-info .container {
   display: flex;
